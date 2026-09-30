@@ -25,3 +25,4 @@ fsrs-*.tar
 **/target
 Cargo.lock
 /priv/native/*.so
+checksum-*

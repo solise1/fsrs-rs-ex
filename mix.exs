@@ -1,7 +1,7 @@
 defmodule Fsrs.MixProject do
   use Mix.Project
 
-  @version "0.2.1"
+  @version "0.2.2"
   @source_url "https://github.com/solise1/fsrs-rs-ex"
 
   def project do
@@ -41,11 +41,12 @@ defmodule Fsrs.MixProject do
     [
       files: [
         "lib",
-        "native/fsrs/.cargo",
-        "native/fsrs/src",
-        "native/fsrs/Cargo*",
+        "native/fsrs_nif/.cargo",
+        "native/fsrs_nif/src",
+        "native/fsrs_nif/Cargo*",
         "checksum-*.exs",
-        "mix.exs"
+        "mix.exs",
+        "README.md"
       ],
       licenses: ["BSD-3-Clause"],
       links: %{"GitHub" => "https://github.com/solise1/fsrs-rs-ex"}
