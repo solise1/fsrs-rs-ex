@@ -8,6 +8,6 @@ fsrs = "6.6.2"
 rustler = "0.38.0"
 
 [lib]
-name = "fsrs"
+name = "fsrs_nif"
 path = "src/lib.rs"
 crate-type = ["cdylib"]

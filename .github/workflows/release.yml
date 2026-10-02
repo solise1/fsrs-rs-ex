@@ -53,7 +53,7 @@ jobs:
       id: build-crate
       uses: philss/rustler-precompiled-action@v1.1.5
       with:
-        project-name: fsrs
+        project-name: fsrs_nif
         project-version: ${{ env.PROJECT_VERSION }}
         target: ${{ matrix.job.target }}
         nif-version: ${{ matrix.nif }}
