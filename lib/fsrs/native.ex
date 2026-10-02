@@ -12,7 +12,7 @@ defmodule Fsrs.Native do
   use RustlerPrecompiled,
     otp_app: :fsrs,
     crate: :fsrs_nif,
-    base_url: "https://github.com/solise1/fsrs-rs-ex/releases/tag/v#{version}",
+    base_url: "https://github.com/solise1/fsrs-rs-ex/releases/download/v#{version}",
     nif_versions: ["2.15"],
     force_build: System.get_env("FSRS_RS_EX_BUILD") in ["1", "true"],
     version: version
