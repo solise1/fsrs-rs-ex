@@ -46,7 +46,7 @@ jobs:
     - name: Install Rust toolchain
       uses: dtolnay/rust-toolchain@stable
       with:
-        toolchain: stable
+        toolchain: 1.98.1
         target: ${{ matrix.job.target }}
 
     - name: Build the project
@@ -71,7 +71,7 @@ jobs:
         path: ${{ steps.build-crate.outputs.file-path }}
 
     - name: Publish archives and packages
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@v3
       with:
         files: |
           ${{ steps.build-crate.outputs.file-path }}
